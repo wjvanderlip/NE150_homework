@@ -1,0 +1,34 @@
+$ by WJ Vanderlip, NE150, Homework 4, Problem 5
+
+c CELL CARD
+1 1 -10.41 -1 -10 20         vol=211.24069   imp:n=1 $FUEL
+2 0 1 -2 -10 20              vol=10.43009    imp:n=1 $GAP
+3 3 -6.56 2 -3 -10 20        vol=67.8584     imp:n=1 $CLADDING
+4 4 -0.7 3 -6 7 -8 9 -10 20  vol=345.510821  imp:n=1 $WATER
+5 0 6:-7:8:-9:10:-20                         imp:n=0 $EXTERNAL
+
+c SURFACE CARD
+1 cz 0.41 $FUEL
+2 cz 0.42 $GAP
+3 cz 0.48 $CLADDING
+*6 px 0.63
+*7 px -0.63
+*8 py 0.63
+*9 py -0.63
+*10 pz 200.0
+*20 pz -200.0
+
+c MATERIAL CARD
+m1 08016.62c 2.00000 92235.68c 0.03037 92238.68c 0.96963 $FUEL
+m3 40000.42c 1
+m4 01001.62c 2 08016.62c 1 $WATER
+
+F14:N 1 3 4 $average flux in cell 1,3,4
+E14:N .0000001 1 10
+F24:N 1
+FM24 1 1 (-2) (-6)
+
+kcode 1000 1.00 50 250 $particles, keff guess, cycles, particles skipped
+ksrc 0. 0. 0. $location of source
+print
+mode n $use neutrons

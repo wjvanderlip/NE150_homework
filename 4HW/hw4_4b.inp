@@ -1,0 +1,16 @@
+ady Godiva
+1   1   -18.74   -1   imp:n=1 $ U sphere
+2   2   -11.3    -1   imp:n=1 $ Pb Shell
+3   0             1   imp:n=0 $ external
+
+1   so   8.74   $ sphere radius
+2   so   8.74   $ Pb shell inner radius
+3   so   18.74  $ Pb shell outer radius 10cm thick
+
+m1  92235 0.5000 92238 0.5000             #changed enrichment to 50%
+m2  82000 1.0
+
+kcode 3000 1. 100 300
+ksrc  0. 0. 0.
+mode n
+print
