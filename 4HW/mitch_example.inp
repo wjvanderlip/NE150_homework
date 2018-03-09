@@ -1,0 +1,19 @@
+Simple Uranium-235 Cube
+c cell cards for uranium cube (64cm^3) simulation
+1 1 -19.1 -1 2 -3 4 -5 6 	IMP:N=1
+2 0      (1:-2:3:-4:5:-6)	IMP:N=0
+c end of cell cards for cube simulation
+
+c Beginning of surface
+1 px 2	      $ uranium cube (w/ side 4cm)
+2 px -2
+3 py 2
+4 py -2
+5 pz 2
+6 pz -2
+c End of surfaces
+
+M1 92235 1        $ pure uranium-235 [ID ZAID Density]
+kcode 10000 1 10 50
+ksrc 0 0 0
+PRINT 50
