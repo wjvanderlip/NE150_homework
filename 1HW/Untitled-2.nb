@@ -1,0 +1,182 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5430,        172]
+NotebookOptionsPosition[      4506,        149]
+NotebookOutlinePosition[      4846,        164]
+CellTagsIndexPosition[      4803,        161]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"lam238", " ", "=", " ", 
+   RowBox[{"1.5", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "10"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lam235", " ", "=", " ", 
+   RowBox[{"9.7", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "10"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", " ", "=", " ", 
+   RowBox[{"1", "*", 
+    SuperscriptBox["10", "9"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"99.3", "\[Equal]", 
+    RowBox[{"A238", "*", 
+     SuperscriptBox["E", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "lam238"}], "*", "t"}], ")"}]]}]}], ",", " ", "A238"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{".7", "\[Equal]", 
+    RowBox[{"A235", "*", 
+     SuperscriptBox["E", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "lam235"}], "*", "t"}], ")"}]]}]}], ",", " ", "A235"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.72684968371028*^9, 3.726849892867887*^9}, {
+  3.726849924000811*^9, 3.726849948299633*^9}, {3.726850096549077*^9, 
+  3.726850099010344*^9}},ExpressionUUID->"88fa4e32-fdc7-4f76-b63e-\
+33c34d1a9378"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"A238", "\[Rule]", "115.37014030291851`"}], "}"}], "}"}]], "Output",\
+
+ CellChangeTimes->{
+  3.7268498943990507`*^9, {3.726849930393137*^9, 3.7268499528228483`*^9}, 
+   3.726850101012867*^9},ExpressionUUID->"ad9def38-39df-407d-9842-\
+175ea79e5d47"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"A235", "\[Rule]", "1.8465611215479065`"}], "}"}], "}"}]], "Output",\
+
+ CellChangeTimes->{
+  3.7268498943990507`*^9, {3.726849930393137*^9, 3.7268499528228483`*^9}, 
+   3.726850101016616*^9},ExpressionUUID->"53bc4751-2dd9-40fc-ba9c-\
+ab1a926b5530"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "t", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{".04", " ", "\[Equal]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{".7", "/", 
+          RowBox[{"(", 
+           SuperscriptBox["E", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "lam235"}], "*", "t"}], ")"}]], ")"}]}], ")"}], 
+        "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"99.3", "/", 
+            RowBox[{"(", 
+             SuperscriptBox["E", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "lam238"}], "*", "t"}], ")"}]], ")"}]}], ")"}], 
+          "+", 
+          RowBox[{"(", 
+           RowBox[{".7", "/", 
+            RowBox[{"(", 
+             SuperscriptBox["E", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "lam235"}], "*", "t"}], ")"}]], ")"}]}], ")"}]}],
+          ")"}]}], ")"}]}], ",", " ", "t"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.726850885185582*^9, 
+  3.726851046237083*^9}},ExpressionUUID->"674f722e-148c-4b6d-b9eb-\
+c76131a710a4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ifun",
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"",2,21,3,18899387690757690378,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.726851022735951*^9, 
+  3.7268510480084257`*^9}},ExpressionUUID->"27f19abd-08bb-45b4-883e-\
+bdee6da249c8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"t", "\[Rule]", "2.166788639807212`*^9"}], "}"}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.7268510227374763`*^9, 
+  3.72685104803275*^9}},ExpressionUUID->"6cb0f5d6-b018-446a-a1a8-\
+7b459063e09b"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.726850972946224*^9, 
+  3.726850974434657*^9}},ExpressionUUID->"e261d31c-eafc-4231-8959-\
+6d67831a8ad4"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{251, Automatic}, {57, Automatic}},
+FrontEndVersion->"11.2 for Linux x86 (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1196, 36, 142, "Input",ExpressionUUID->"88fa4e32-fdc7-4f76-b63e-33c34d1a9378"],
+Cell[1779, 60, 304, 8, 35, "Output",ExpressionUUID->"ad9def38-39df-407d-9842-175ea79e5d47"],
+Cell[2086, 70, 304, 8, 35, "Output",ExpressionUUID->"53bc4751-2dd9-40fc-ba9c-ab1a926b5530"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2427, 83, 1225, 37, 117, "Input",ExpressionUUID->"674f722e-148c-4b6d-b9eb-c76131a710a4"],
+Cell[3655, 122, 425, 10, 41, "Message",ExpressionUUID->"27f19abd-08bb-45b4-883e-bdee6da249c8"],
+Cell[4083, 134, 252, 7, 100, "Output",ExpressionUUID->"6cb0f5d6-b018-446a-a1a8-7b459063e09b"]
+}, Open  ]],
+Cell[4350, 144, 152, 3, 31, "Input",ExpressionUUID->"e261d31c-eafc-4231-8959-6d67831a8ad4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
