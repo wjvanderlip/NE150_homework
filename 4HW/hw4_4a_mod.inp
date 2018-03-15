@@ -1,0 +1,13 @@
+c by WJ Vanderlip, NE150, Homework 4, Problem 4
+c Lady Godiva
+1   1   -18.74   -1   imp:n=1 $ U sphere
+2   0             1   imp:n=0 $ external
+
+c Sphere surfaces
+1   so   12.68   $ U sphere radius
+
+m1  92235 0.5000 92238 0.5000  $ changed enrichment to 50%
+kcode 3000 1. 100 300
+ksrc  0. 0. 0.
+mode n
+print
