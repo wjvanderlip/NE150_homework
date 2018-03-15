@@ -1,0 +1,15 @@
+ady Godiva
+1   1   -18.74   -1   imp:n=1 $ U sphere
+2   2   -11.3    +1 -2   imp:n=1 $ Pb Shell  (+1 -2 means its out side of srf1 and in surf2)
+3   0             2   imp:n=0 $ external
+
+1   so   10.74   $ sphere radius,  vary radius to find K k=1
+2   so   20.74   $ Pb shell outer radius, 10cm  keep Pb shell at 10cm
+
+c sphere surfaces
+m1  92235 0.5000 92238 0.5000             $changed enrichment to 50%
+m2  82000 1.0   $ lead shield
+kcode 3000 1. 100 300
+ksrc  0. 0. 0.
+mode n
+print

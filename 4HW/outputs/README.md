@@ -4,25 +4,31 @@
 Keff = .9978
 
 ## 4a- 50 at% enrichment:
-Keff =
+Keff = .7160
 
-Criticality achieved at R= 12.
+Criticality achieved at R= 12.68 cm
 Keff = 1.003
 
 ## 4b- 50 at% and lead shield
-Keff =
+Keff = .8601
 
 Criticality achieved at R= 12.
+Note=Lead shield kept at 10cm thickness
 Keff = 1.003
 
 # Solutions for 5
 
 ## k_inf
-
+Since boundary conditions are reflective:
+K_inf = K_eff =
 ## Average total flux value in the fuel, clad and moderator
-
+-  Fuel:
+-  Cladding:
+-  Moderator:
 ## Average thermal flux in fuel, clad and moderator
-
+-  Fuel:
+-  Cladding:
+-  Moderator:
 ## Plot of average total, thermal, and fast flux in fuel, clad and moderator
 
 ## Total fission and capture rate in the fuel
@@ -36,4 +42,4 @@ Vol3
 Vol4
 Vol5
 
-## Plot of fuel volume flux 
+## Plot of fuel volume flux
