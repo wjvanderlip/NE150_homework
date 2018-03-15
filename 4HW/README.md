@@ -5,4 +5,6 @@
 ```
 ssh foxtrot
 setenv DATAPATH /usr/local/mcnp5_lib-160  
+
+mcnp5 inp=F_NAME.inp
 ```
