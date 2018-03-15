@@ -29,10 +29,10 @@ c unit cell
 *20 pz -200.0
 
 c Materials
-m1 8016.94c 2.0 92235.94c 0.0506 92238.94c .9494   $fuel
-m3 40000.95c 1    $cladding
-mt4 lwtr.04t  $thermal scattering lib
-m4 1001.69c 2 8016.69c 1    $water
+m1 8016 2.0 92235 0.0506 92238 .9494   $fuel
+m3 40000 1    $cladding
+mt4 lwtr  $thermal scattering lib
+m4 1001 2 8016 1    $water
 kcode 1000 1.00 50 200 $particles, keff guess, cycles, particles skipped
 ksrc 0. 0. 0. $location of source
 print
