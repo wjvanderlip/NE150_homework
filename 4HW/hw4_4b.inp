@@ -7,8 +7,8 @@ ady Godiva
 2   so   18.74   $ Pb shell outer radius, 10cm
 
 c sphere surfaces
-m1  92235 0.5000 92238 0.5000             #changed enrichment to 50%
-m2  82000 1.0   # lead shield
+m1  92235 0.5000 92238 0.5000             $changed enrichment to 50%
+m2  82000 1.0   $ lead shield
 
 kcode 3000 1. 100 300
 ksrc  0. 0. 0.
