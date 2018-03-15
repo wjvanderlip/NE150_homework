@@ -1,5 +1,4 @@
-$ by WJ Vanderlip, NE150, Homework 4, Problem 5
-
+c by WJ Vanderlip, NE150, Homework 4, Problem 5
 c CELL CARD
 1 1   -10.41    -1 -10 20             imp:n=1     $fuel
 2 0             1 -2 -10 20           imp:n=1     $Gap
@@ -20,11 +19,9 @@ c unit cell
 *20 pz -200.0
 
 c Materials
-m1    $fuel
-m3    $cladding
-m4    $water
-
-
+m1 8016.94c 2.0 92235.94c 0.0506 92238.94c .9494   $fuel
+m3 40000.95c 1    $cladding
+m4 1001.69c 2 8016.69c 1    $water
 kcode 1000 1.00 50 200 $particles, keff guess, cycles, particles skipped
 ksrc 0. 0. 0. $location of source
 print
