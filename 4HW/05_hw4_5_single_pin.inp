@@ -3,7 +3,7 @@ c CELL CARD
 1 1   -10.41    -1 -10 20             imp:n=1     $fuel
 2 0             1 -2 -10 20           imp:n=1     $Gap
 3 3   -6.56     2 -3 -10 20           imp:n=1     $Clad
-4 4   -.7        3 -5 6 -7 8 -10 20    imp:n=1     $Water
+4 4   -.7       3 -5 6 -7 8 -10 20    imp:n=1     $Water
 99 0            5:-6:7:-8:10:-20       imp:n=0    $external
 
 c Fuel Rod dimensions
@@ -25,10 +25,10 @@ c mt4 lwtr.04t  $thermal scattering lib
 c m4 1001.69c 2 8016.69c 1    $water
 c
 c  ***********Material Input **************
-m1 8016 2.0 92235 0.0506 92238 .9494   $fuel
-m3 40000 1    $cladding
-mt4 lwtr  $thermal scattering lib
 m4 1001 2 8016 1    $water
+mt4 lwtr  $thermal scattering lib
+m3 40000 1    $cladding
+m1 8016 2.0 92235 0.0506 92238 .9494   $fuel
 c
 c ************* Input Tally Commands*****************
 c

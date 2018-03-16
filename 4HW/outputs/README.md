@@ -8,14 +8,15 @@ Keff = .7160
 
 Criticality achieved at R= 12.68 cm
 Keff = 1.003
+Mass fuel = 4*Pi*12.68^3 [cm^3]* 18.74[g/cm^3] = 479337.5 [g]
 
 ## 4b- 50 at% and lead shield
 Keff = .8601
 
-Criticality achieved at R= 12.
+Criticality achieved at R= 11.00 cm
 Note=Lead shield kept at 10cm thickness
-Keff = 1.003
-
+Keff = 1.04
+Mass fuel = 4*Pi*11.00^3 [cm^3]* 18.74[g/cm^3] = 312940.4 [g]
 # Solutions for 5
 
 ## k_inf
