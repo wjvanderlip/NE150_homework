@@ -40,7 +40,7 @@ f24:n 	1 2 3 4 5
 e24:n	.1e-6 10
 fc34	Fine Energy Distribution
 f34:n	(1 2 3 4 5)
-e34:n	.01 .02 .03 .04 .05 .06 .07 .08 .09 .1 1 2 3 4 5 6 7 8 9 10
+e34:n	.01e-6 .02e-6 .03e-6 .04e-6 .05e-6 .06e-6 .07e-6 .08e-6 .09e-6 .1e-6 1 2 3 4 5 6 7 8 9 10
 kcode 10000 1.00 50 200 $particles, keff guess, cycles, particles skipped
 ksrc 0. 0. 0. $location of source
 print
