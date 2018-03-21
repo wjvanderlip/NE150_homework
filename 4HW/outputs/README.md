@@ -37,6 +37,8 @@ Fast:
 -  Moderator: 1.48172E-01
 ## Plot of average total, thermal, and fast flux in fuel, clad and moderator
 
+![Question5](q5_flux.jpg)
+
 ## Total fission and capture rate in the fuel [10000*n/s]
 Fission = 5.18457E-02
 Capture = 4.50434E-02
@@ -66,5 +68,6 @@ Thermal = 3.16416E-03
 Fast = 1.28662E-02
 
 ## Plot of fuel volume flux
-
+![Question5](q6_flux.jpg)
 ## Plot of fine energy distribution
+![Energy Distribution](q6_nrg_distro.jpg)
