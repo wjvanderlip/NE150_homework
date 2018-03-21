@@ -40,8 +40,12 @@ f24:n 	1 2 3 4 5
 e24:n	.1e-6 10
 fc34	Fine Energy Distribution
 f34:n	(1 2 3 4 5)
-e34:n	.01e-6 .02e-6 .03e-6 .04e-6 .05e-6 .06e-6 .07e-6 .08e-6
-     .09e-6 .1e-6 1 2 3 4 5 6 7 8 9 10
+e34:n   0 .01e-6 .02e-6 .03e-6 .04e-6 .05e-6 .06e-6 .07e-6 .08e-6
+     .09e-6 1.00000000e-07 7.74263683e-07 5.99484250e-06 4.64158883e-05
+       3.59381366e-04 2.78255940e-03 2.15443469e-02 1.66810054e-01
+       1.29154967 1.00000000e+01
+c For the spacing between .1ev and 10 MeV, i used a log distribution in python
+c np.geomspace(.1, 10e6, 10)  see notebook for code 
 kcode 10000 1.00 50 200 $particles, keff guess, cycles, particles skipped
 ksrc 0. 0. 0. $location of source
 print
