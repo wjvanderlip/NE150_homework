@@ -1,3 +1,7 @@
+All input files are in the 4HW directory. Each input file used in this assignment is included.  For question 4, the mod files is what was used to find the radius of the sphere to reach criticality. In the outputs folder, each question has a sub folder with the MCNP output text file.  
+
+Plotting was done in the Jupyter Notebook, and several calculations were done in the Mathematica notebook, both are included in the repo.  
+
 # Solutions for 4
 
 ## Lady Godiva original code:
@@ -38,6 +42,8 @@ Fast:
 ## Plot of average total, thermal, and fast flux in fuel, clad and moderator
 
 ![Question5](q5_flux.jpg)
+The shape of the flux in each region is not what I expected to see. I anticipated a higher thermal flux in the moderator, and while it is slightly higher, it is still not showing a large thermal population. This is possibly due to the energy bins we are looking at in the tally card. Since we are defining thermal from 0-.1 eV and Fast from .1ev - 10 MeV, the relative population of the "Fast" group will obviously dominate the population.
+Additionally, there is minimal change in flux between each region.  
 
 ## Total fission and capture rate in the fuel [10000*n/s]
 Fission = 5.18457E-02
@@ -46,32 +52,36 @@ Capture = 4.50434E-02
 # Solutions for 6
 
 ## Average total, thermal and fast flux values in each fuel volume [10000*n/cm^2*s]
+See Mathematica notebook for fuel radius calculation.
 -  Vol1 (core)
-Total= 1.61809E-02
-Thermal = 2.66372E-03
-Fast = 1.35076E-02
+Total= 1.61809E-02  
+Thermal = 2.66372E-03  
+Fast = 1.35076E-02  
 -  Vol2
-Total= 1.61690E-02
-Thermal = 2.76299E-03
-Fast = 1.33967E-02
+Total= 1.61690E-02  
+Thermal = 2.76299E-03  
+Fast = 1.33967E-02  
 -  Vol3
-Total=  1.61309E-02
-Thermal = 2.86679E-03
-Fast = 1.32550E-02
+Total=  1.61309E-02  
+Thermal = 2.86679E-03  
+Fast = 1.32550E-02  
 -  Vol4
-Total= 1.60925E-02
-Thermal = 2.99604E-03
-Fast = 1.30875E-02
+Total= 1.60925E-02  
+Thermal = 2.99604E-03  
+Fast = 1.30875E-02  
 -  Vol5
-Total= 1.60389E-02
-Thermal = 3.16416E-03
-Fast = 1.28662E-02
+Total= 1.60389E-02  
+Thermal = 3.16416E-03  
+Fast = 1.28662E-02  
 
 ## Plot of fuel volume flux
 ![Question5](q6_flux.jpg)
+
+The thermal flux is increased in with the multiple fuel cell volumes.  I assume MCNP is better able to model how the fuel effects the neutrons when it is broken up into different regions.
 ## Plot of fine energy distribution
 ![Energy Distribution](q6_nrg_distro.jpg)
 
+The energy bins are in units of eV and keep getting cut off in the save fig function, see the jupyter notebook for source image and code.
 
 # DCEF Insturctions
 
