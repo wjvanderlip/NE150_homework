@@ -4,7 +4,7 @@
 
 ## Solutions for 1
 
-![Fuel to Mod Ratio vs K_inf](FuelMod.png)
+![Fuel to Mod Ratio vs K_inf](FuelMod.jpg)
 
 
 
