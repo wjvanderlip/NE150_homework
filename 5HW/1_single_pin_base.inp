@@ -12,10 +12,10 @@ c Fuel Rod dimensions
 3 cz .55    $clad outer
 c unit cell
 c Pitch length for plotting (1.10, 1.26, 1.40, 1.60, 1.80, 2.00)
-*5 px .55
-*6 px -.55
-*7 py .55
-*8 py -.55
+*5 px 1.00
+*6 px -1.00
+*7 py 1.00
+*8 py -1.00
 c 400cm length
 *10 pz 200.0
 *20 pz -200.0
