@@ -4,10 +4,7 @@
 
 ## Solutions for 1
 
-
-
-
-Need plot of K as function of mod to fuel vol ratio 
+![Fuel to Mod Ratio vs K_inf](FuelMod.png)
 
 
 
