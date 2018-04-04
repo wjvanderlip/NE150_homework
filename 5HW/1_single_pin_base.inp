@@ -3,19 +3,23 @@ c CELL CARD
 1 1   -10.41    -1 -10 20             vol=144.765   imp:n=1     $fuel
 2 0             1 -2 -10 20           vol=45.3018   imp:n=1     $Gap
 3 3   -6.56     2 -3 -10 20           vol=39.2071   imp:n=1     $Clad
-4 4   -.7       3 -5 6 -7 8 -10 20    vol=127.454   imp:n=1     $Water
+4 4   -.7       3 -5 6 -7 8 -10 20    vol=345.5     imp:n=1     $Water  messed up the vol input on the old HW
 5 0            5:-6:7:-8:10:-20                     imp:n=0    $external
 
 c Fuel Rod dimensions
-1 cz .48    $fuel radius
-2 cz .49    $inner Clad
-3 cz .55    $clad outer
+c
+c for the last HW, I assumed the fuel rod was just the fuel, and added the gap and cladding value to it....
+c for this I altered my input to match the provided Input
+c
+1 cz .41    $fuel radius
+2 cz .42    $inner Clad
+3 cz .48    $clad outer
 c unit cell
 c Pitch length for plotting (1.10, 1.26, 1.40, 1.60, 1.80, 2.00)
-*5 px 1.00
-*6 px -1.00
-*7 py 1.00
-*8 py -1.00
+*5 px .55
+*6 px -.55
+*7 py .55
+*8 py -.55
 c 400cm length
 *10 pz 200.0
 *20 pz -200.0
