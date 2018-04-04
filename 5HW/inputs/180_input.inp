@@ -1,0 +1,45 @@
+by WJ Vanderlip, NE150, Homework 5, Problem 1
+c CELL CARD
+1 1   -10.41    -1 -10 20             tmp=7.76E-08   imp:n=1     $fuel
+2 0             1 -2 -10 20           		           imp:n=1     $Gap
+3 3   -6.56     2 -3 -10 20           tmp=6.89E-08   imp:n=1     $Clad
+4 4   -.7       3 -5 6 -7 8 -10 20    tmp=5.17E-8   vol=1006.47     imp:n=1     $Water
+5 0            5:-6:7:-8:10:-20                     imp:n=0    $external
+
+c Fuel Rod dimensions
+c
+c for the last HW, I assumed the fuel rod was just the fuel, and added the gap and cladding value to it....
+c for this I altered my input to match the provided Input
+c
+1 cz .41    $fuel radius
+2 cz .42    $inner Clad
+3 cz .48    $clad outer
+c unit cell
+c Pitch length for plotting (1.10, 1.26, 1.40, 1.60, 1.80, 2.00)
+*5 px .9
+*6 px -.9
+*7 py .9
+*8 py -.9
+c 400cm length
+*10 pz 200.0
+*20 pz -200.0
+
+c Materials
+c  ***********Material Input **************
+m4 1001 2 8016 1    $water
+mt4 lwtr  $thermal scattering lib
+m3 40000 1    $cladding
+m1 8016 2.0 92235 0.0500 92238 .9500   $fuel 5 a/0 enrichment
+c
+c ************* Input Tally Commands*****************
+c
+c fc14	Flux in Fuel, Cladding and  Mod
+c f14:n	1 3 4 $total average flux in fuel, caladding and modetator
+c f24:n	1 3 4
+c e24:n	.1e-6 10 $defines two flux regions 0eV  to .1e-6 and .1e-6 to 10MeV
+c f34:n	1
+c fm34	1 1 (-2) (-6) $capture (-2) and fission (-6) in fuel (region 1)
+kcode 1000 1.00 150 200 $particles, keff guess, cycles, particles skipped
+ksrc 0. 0. 0. $location of source
+print
+mode n $use neutrons

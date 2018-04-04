@@ -1,9 +1,9 @@
 by WJ Vanderlip, NE150, Homework 5, Problem 1
 c CELL CARD
 1 1   -10.41    -1 -10 20             tmp=7.76E-08   imp:n=1     $fuel
-2 0             1 -2 -10 20           		     imp:n=1     $Gap
+2 0             1 -2 -10 20           		           imp:n=1     $Gap
 3 3   -6.56     2 -3 -10 20           tmp=6.89E-08   imp:n=1     $Clad
-4 4   -.7       3 -5 6 -7 8 -10 20   tmp=5.17E-8 vol=345.5     imp:n=1     $Water 
+4 4   -.7       3 -5 6 -7 8 -10 20    tmp=5.17E-8   vol=345.5     imp:n=1     $Water
 5 0            5:-6:7:-8:10:-20                     imp:n=0    $external
 
 c Fuel Rod dimensions
@@ -16,10 +16,10 @@ c
 3 cz .48    $clad outer
 c unit cell
 c Pitch length for plotting (1.10, 1.26, 1.40, 1.60, 1.80, 2.00)
-*5 px 1.0
-*6 px -1.0
-*7 py 1.0
-*8 py -1.0
+*5 px .63
+*6 px -.63
+*7 py .63
+*8 py -.63
 c 400cm length
 *10 pz 200.0
 *20 pz -200.0
